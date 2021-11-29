@@ -6,10 +6,10 @@ from tensorflow.keras.preprocessing import sequence
 news_title = ""
 model = keras.models.load_model('BTC_model_500k.h5')
 
-st.title("Fake News Detection")
+st.title("ANTI FAKE")
 
-st.header("CHECK YOUR NEWS HERE!")
-news_title = st.text_area('Enter your news title below')
+st.header("CHECK YOUR CRYPTO NEWS HERE!")
+news_title = st.text_area('Enter your news below')
 
 X = list()
 X.append(news_title)
