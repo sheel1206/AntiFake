@@ -1,11 +1,6 @@
 import streamlit as st
-import nltk
 import joblib
-nltk.download('stopwords')
 from tensorflow import keras
-nltk.download('wordnet')
-from nltk.stem import WordNetLemmatizer
-lemmatizer = WordNetLemmatizer()
 from tensorflow.keras.preprocessing import sequence
 
 news_title = ""
