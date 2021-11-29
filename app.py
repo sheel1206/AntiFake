@@ -20,9 +20,9 @@ tokenized_pred = tokenized.texts_to_sequences(X)
 X = sequence.pad_sequences(tokenized_pred, maxlen=max_len)
 
 prediction = model.predict(X)
-
+print(prediction[0])
 if st.button("Detect"):
         if prediction[0] <= 0.5:
-          st.success("Your news is FAKE with score of " + str(int(100 - prediction[0])))
+          st.success("Your news is FAKE with score of " + str((100 - prediction[0])))
         else:
             st.success("Your news is REAL with score of " + str(int(prediction[0])))
