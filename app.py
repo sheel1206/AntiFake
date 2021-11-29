@@ -23,6 +23,6 @@ prediction = model.predict(X)
 
 if st.button("Detect"):
         if prediction[0] <= 0.5:
-          st.success("Your news is FAKE!")
+          st.success("Your news is FAKE!" + prediction[0])
         else:
-            st.success("Your news is REAL!")
+            st.success("Your news is REAL!" + prediction[0])
